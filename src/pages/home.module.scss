@@ -1,74 +1,60 @@
-.ContainerPosts {
-   max-width: 1120px;
-   margin: 0 auto;
-   padding: 0 2rem;   
-}
-
-.posts {
-    max-width: 720px;
-    margin: 5rem auto 0;
-
-    a {
-        display: block;
-
-        & + a {
-            margin-top: 2rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--gray-700);
-        }       
-
-        strong {
-            display: block;
-            font-size: 1.5rem;
-            margin-top: 1rem;
-            line-height: 2rem;
-            transition: color 0.2s;
-        }        
-
-        &:hover strong {
-            color: var(--yellow-500);
-        }
+.mainContainer {
+    header {
+      height: 105px;
+      align-items: end;
     }
-}
-
-.InfoPost {
-    display: flex;
-    align-items: center;
-
+  }
+  
+  .postsList {
+    margin: 1rem auto;
+  }
+  
+  .post {
+    margin: 3rem auto;
+  
+    h1 {
+      color: var(--white);
+      font-weight: 700;
+      font-size: 1.75rem;
+      line-height: 2.11rem;
+      text-align: justify;
+    }
+  
     p {
-        color: var(--gray-300);
-        line-height: 1.625rem;        
-        padding-right: 1rem;
-        padding-left: .3rem;
+      margin: 0.5rem auto;
+      color: var(--gray-100);
+      font-size: 1.12rem;
+      line-height: 1.36rem;
+      text-align: justify;
     }
-
-    time {
-        font-size: 1rem;
-        display: flex;
-        align-items: center;
-        color: var(--gray-300);
-        padding-right: 1rem;
-        padding-left: .3rem;
+  
+    .postFooter {
+      font-size: 0.93rem;
+      margin-top: 1.5rem;
+      color: var(--gray-100);
+  
+      span {
+        svg {
+          stroke: var(--white);
+          margin-right: 0.5rem;
+        }
+  
+        & + span {
+          margin-left: 1.5rem;
+        }
+      }
+  
     }
-}
-
-.ContainerLoadMore {
-    max-width: 1120px;
-    margin: 0 auto;
-    padding: 0 2rem;  
-
-    button {
-        border: none;
-        background:none;
-        color: var(--highlight);
+  }
+  
+  .loadMorePosts {
+    color: var(--highlight);
+    background-color: transparent;
+    border: 0;
+  }
+  
+  @media (max-width: 720px) {
+    .mainContainer {
+      padding: 0 2rem 2rem;
     }
-    
-    .buttonLoadMore {
-        max-width: 720px;
-        margin: 5rem 10rem 0;
-
-        font-size: 1.5rem;
-        font-weight: 600;
-        line-height: 2rem;        
-    }
-}
+  }

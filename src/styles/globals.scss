@@ -4,39 +4,29 @@
   padding: 0;
 }
 
+/* Variables */
 :root {
-  --white: #ffffff;
-
-  --gray-100: #e1e1e6;
-  --gray-300: #a8a8b3;
-  --gray-700: #323238;
-  --gray-800: #29292e;
-  --gray-850: #1f2729;
-  --gray-900: #121214;
-
+  --white: #F8F8F8;
   --highlight: #FF57B2;
-
-  --cyan-500: #61dafd;
-
-  --yellow-500: #eba417;
-
+  --black: #1A1D23;
+  --gray-50: #BBBBBB;
+  --gray-100: #D7D7D7;
 }
 
 @media (max-width: 1080px) {
   html {
-      font-size: 93.75%;
+    font-size: 93.75%; // 16*0,9375 = 15px
   }
 }
 
 @media (max-width: 720px) {
   html {
-      font-size: 87.5%;
+    font-size: 87.5%; // 16*0,875 = 14px
   }
 }
 
-
 body {
-  background: var(--gray-900);
+  background: var(--black);
   color: var(--white);
 }
 
